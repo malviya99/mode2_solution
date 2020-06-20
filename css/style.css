@@ -1,0 +1,82 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+h1,h2{
+    text-align: center;
+}  
+
+h2{
+    border: 1px solid black;
+    position: absolute; 
+    top: 0px;
+    margin: 0px;
+    padding: 2px 3px;
+    right: 0px;
+    width: 45%;
+
+}
+
+/* #container{
+    display: flex;
+    flex-direction: wrap; 
+} */
+
+p{
+    text-align: justify;
+    padding : 3%;
+}
+
+section{
+    border: 1px solid black;
+    display: block;
+    left: auto;
+    position: relative;
+    padding: 30px 12px 0px;
+    background-color: rgb(168, 229, 235);
+    margin: 0px 10px 30px;
+  
+   
+}
+
+#box1 > h2{background-color:rgb(233, 100, 39) ;}
+#box2 > h2{background-color:rgb(158, 255, 47) ;}
+#box3 > h2{background-color:rgb(179, 47, 255) ;}
+
+
+
+
+
+/* larger devices */
+@media (min-width: 991px) {
+    section{
+        float: left;
+        width: 30%;
+        margin: 0px 15px 0px;
+    }
+    
+}
+
+
+/* Small and Medium devices */
+@media (min-width: 768px) and (max-width: 990px){
+    
+
+#box1, #box2{
+    margin: 0 2% 3% 2%;
+    width: 46%;
+    float: left;
+}
+
+#box3{
+    clear: left;
+    margin: 2%; 
+}
+
+#box3 > h2{width: 20%;}
+}
+
+
